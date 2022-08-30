@@ -1,11 +1,13 @@
 <input
-  [(ngModel)]="filtro"
-  name="filtro"
+  [(ngModel)]="nome"
+  name="nome"
   class="rounded mb-3"
   type="search"
-  placeholder="search..."
+  placeholder="Digite seu nome..."
   autofocus
 />
 
-<hello name="{{ filtro ? filtro : 'anônimo' }}"></hello>
+<hello
+  name="{{ nome ? (nome == 'anônimo' ? 'anônimo...?' : nome ) : 'anônimo' }}"
+></hello>
 <p>FATEC Rocks!</p>
