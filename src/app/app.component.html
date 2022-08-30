@@ -1,0 +1,11 @@
+<input
+  [(ngModel)]="filtro"
+  name="filtro"
+  class="rounded mb-3"
+  type="search"
+  placeholder="search..."
+  autofocus
+/>
+
+<hello name="{{ filtro ? filtro : 'anônimo' }}"></hello>
+<p>FATEC Rocks!</p>
